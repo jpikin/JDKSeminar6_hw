@@ -10,12 +10,21 @@ public class Logic {
     }
 
     public static void generateWinDoor(){
-        int winNum = random.nextInt(0,3);
+        int winNum = randomChoice();
         Door.getDoors().get(winNum).setWin(true);
     }
     public static void startGame(){
         createGame();
         generateWinDoor();
+        userChoiceDoor();
+    }
+
+    private static void userChoiceDoor() {
+        Door.getDoors().get(randomChoice()).setUserMarker(true);
+    }
+
+    private static int randomChoice(){
+        return random.nextInt(0,3);
     }
 
 

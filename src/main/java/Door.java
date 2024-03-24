@@ -11,6 +11,9 @@ public class Door {
     @Setter @Getter
     private boolean win = false;
 
+    @Setter
+    private boolean userMarker = false;
+
     public Door(int doorNumber) {
         this.doorNumber = doorNumber;
     }
