@@ -2,7 +2,9 @@ public class App {
 
     public static void main(String[] args) {
 
-        Logic.startGame();
+
+        Logic logic = new Logic();
+        logic.startGame();
 
 
 
