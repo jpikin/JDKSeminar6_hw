@@ -14,10 +14,8 @@ public class Door {
 
     @Setter @Getter
     private boolean win = false;
-    Logic logic;
 
-    @Setter @Getter
-    private boolean userMarker = false;
+    Logic logic;
 
     public Door(int doorNumber, Logic logic, Player player) {
         this.doorNumber = doorNumber;
